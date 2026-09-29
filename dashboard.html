@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard Portal TUBEL dan Ketenagakerjaan</title>
+  <title>Dashboard PKA dan Ketenagaan Pusdik KP</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,15 +13,15 @@ function loadDashboard(jenis){
 
 const frame = document.getElementById("dashboardFrame");
 
-if(jenis === "mandiri"){
+if(jenis === "Data Pendidik dan Tenaga Kependidikan"){
 frame.src="https://app.powerbi.com/view?r=eyJrIjoiM2U2YTU3MmItZGVlZi00MGM1LTkzMTEtMTBiMzg0OGVhOWQwIiwidCI6IjI5ZTVlYTIwLWRhYWEtNDI5MS1hMmFlLTg3NGU2M2MxZjI5MiIsImMiOjEwfQ%3D%3D&pageName=22076eac94967b603209";
 }
 
-if(jenis === "dibiayai"){
+if(jenis === "Data Tugas Belajar Dibiayai"){
 frame.src="https://app.powerbi.com/view?r=eyJrIjoiM2U2YTU3MmItZGVlZi00MGM1LTkzMTEtMTBiMzg0OGVhOWQwIiwidCI6IjI5ZTVlYTIwLWRhYWEtNDI5MS1hMmFlLTg3NGU2M2MxZjI5MiIsImMiOjEwfQ%3D%3D&pageName=126f929e10418231ad32";
 }
 
-if(jenis === "ketenagakerjaan"){
+if(jenis === "Data Tugas Belajar Mandiri"){
 frame.src="https://app.powerbi.com/view?r=eyJrIjoiM2U2YTU3MmItZGVlZi00MGM1LTkzMTEtMTBiMzg0OGVhOWQwIiwidCI6IjI5ZTVlYTIwLWRhYWEtNDI5MS1hMmFlLTg3NGU2M2MxZjI5MiIsImMiOjEwfQ%3D%3D&pageName=89be73248fff7fbd674e";
 }
 
@@ -61,9 +61,9 @@ frame.src="https://app.powerbi.com/view?r=eyJrIjoiM2U2YTU3MmItZGVlZi00MGM1LTkzMT
       <a href="#">Dashboard ▾</a>
 
       <ul class="dropdown-menu">
-       <li><a href="#" onclick="loadDashboard('mandiri')">Dashboard Tubel Mandiri</a></li>
-       <li><a href="#" onclick="loadDashboard('dibiayai')">Dashboard Tubel Dibiayai</a></li>
-       <li><a href="#" onclick="loadDashboard('ketenagakerjaan')">Dashboard Ketenagakerjaan</a></li>
+       <li><a href="#" onclick="loadDashboard('Data Pendidik dan Tenaga Kependidikan')">Data Pendidik dan Tenaga Kependidikan</a></li>
+       <li><a href="#" onclick="loadDashboard('Data Tugas Belajar Dibiayai')">Data Tugas Belajar Dibiayai</a></li>
+       <li><a href="#" onclick="loadDashboard('Data Tugas Belajar Mandiri')">Data Tugas Belajar Mandiri</a></li>
       </ul>
     </li>
 
